@@ -11,3 +11,11 @@
 >docker rm 882e34c49f0b
 #remove image
 >docker rmi java-hello
+>docker tag hello-world hello-world:latest
+>docker push hello-world:latest
+>
+# Push image to docker hub
+>docker build -t kaushleshtripathi/hello-world:latest .
+>docker run --name hello-world-container kaushleshtripathi/hello-world:latest
+>docker tag kaushleshtripathi/hello-world:latest kaushleshtripathi/hello-world-tag
+>docker push kaushleshtripathi/hello-world-tag
